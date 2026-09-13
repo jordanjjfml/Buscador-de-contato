@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-mark">C</div>
+                <div class="logo-text">Contactly</div>
+            </div>
+
+            <nav class="nav">
+                <a class="nav-link active" href="#">Contatos</a>
+                <a class="nav-link" href="#">Agenda</a>
+                <a class="nav-link" href="#">Favoritos</a>
+                <a class="nav-link" href="#">Relatórios</a>
+            </nav>
+
+            <div class="user-card">
+                <div class="avatar">J</div>
+                <span>Jordan Lins</span>
+            </div>
+        </aside>
+
+        <main class="contact-app">
+            <section class="topbar">
+                <div>
+                    <div class="overline">Agenda Digital</div>
+                    <h1>Lista de contatos</h1>
+                </div>
+                <button class="new-contact"><span>+</span>Novo contato</button>
+            </section>
+
+            <section class="search-panel">
+                <div class="panel-header">
+                    <div>
+                        <div class="section-kicker">Busca rápida</div>
+                        <h2>Encontrar contato</h2>
+                    </div>
+                    <div class="stats">
+                        <span class="stat-number">05</span>
+                        <span class="stat-label">contatos</span>
+                    </div>
+                </div>
+
+                <div class="search-zone">
+                    <div class="search-form">
+                        <span class="search-label">⌕</span>
+                        <input id="searchInput" type="text" placeholder="Digite o nome do contato" autocomplete="off">
+                        <button id="searchButton">Procurar</button>
+                    </div>
+
+                    <div class="suggestion-panel">
+                        <div class="suggestion-title">
+                            <span>Sugestões</span>
+                        </div>
+                        <div class="suggestions">
+                            <button class="suggestion-item" data-name="João">João</button>
+                            <button class="suggestion-item" data-name="Maria">Maria</button>
+                            <button class="suggestion-item" data-name="Pedro">Pedro</button>
+                            <button class="suggestion-item" data-name="Ana">Ana</button>
+                            <button class="suggestion-item" data-name="Lucas">Lucas</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-card">
+                <div class="result-top">
+                    <div class="contact-avatar">?</div>
+                    <div class="contact-info">
+                        <span class="contact-name">Resultado</span>
+                        <span class="contact-phone">Nenhum contato encontrado</span>
+                    </div>
+                </div>
+                <div id="result" class="result-message">Digite um nome para começar a busca.</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
